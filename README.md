@@ -27,7 +27,7 @@ Further studies should include larger sample sizes, as there might be an interes
 
 *Let's take a look at the dataset:*
 
-<img src='images_pingouin/df_complete.png' alt='Complete dataset for affective response to texts in generic masculine' align='center'>
+<img src='images_pingouin/df_complete.PNG' alt='Complete dataset for affective response to texts in generic masculine' align='center'>
 
 *First, boxplots of the data give a good idea about its distribution and possible effects:*
 
@@ -43,7 +43,7 @@ In order to be able to apply ANOVA, we have to check on some preconditions.
 The residuals are spread asymmetrically. Therefore, we can infer heteroscedasticity and independence of residuals.
 *Next, let's check on equal variances of the subgroups:*
 
-<img src='images_pingouin/variance_inhomogeneity.png' alt='Print levene tests for male and female subgroups' align='center'>
+<img src='images_pingouin/variance_inhomogeneity.PNG' alt='Print levene tests for male and female subgroups' align='center'>
 
 All of the levene tests are insignificant. The unbalanced group sizes can therefore be ignored and ANOVA can be applied.
 
@@ -56,7 +56,7 @@ Men's affective response seems to go up whereas it drops for women.
 
 *Now, let's finally apply the two-way repeated measures ANOVA:*
 
-<img src='images_pingouin/aov.png' alt='Table for ANOVA results' align='center'>
+<img src='images_pingouin/aov.PNG' alt='Table for ANOVA results' align='center'>
 
 For both possible main effects there is no significant result. The most interesting result in ANOVA mostly is the interaction. Here, there is no significant effect, too. The plot above indicates that there might be an interesting interaction though. The limited group size (especially for men (N=16 for control and N=39 for experimental group)) does not allow for an effect to show up. Even for balanced group sizes, the original sample of N=222 would effectively be divided by 4 in a 2x2 design like this one.
 The wide-spread boxplots above give an indication of how the data is overlapping.
